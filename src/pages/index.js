@@ -1,12 +1,32 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Countdown from 'react-countdown-now'
+
+// Wedding Countdown timer
+
+const Completionist = () => <span>wedding message goes here, when countdown reaches zero</span>;
+// Renderer callback with condition
+const renderer = ({ days, hours, completed }) => {
+  if (completed) {
+    // Render a completed state
+    return <Completionist />;
+  } else {
+    // Render a countdown
+    return <span>{days} Days and {hours} Hours until we say I do</span>;
+  }
+};
 
 const IndexPage = () => (
+
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+
+    <Countdown
+    date={"Dec 23, 2018 14:00:00"}
+    renderer={renderer}
+    />
+
+
+
   </div>
 )
 
