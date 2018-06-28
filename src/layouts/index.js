@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
 import Footer from '../components/footer'
-import ContactForm from '../components/rsvp-form';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -27,7 +26,6 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
-    <ContactForm />
     <Footer />
   </div>
 )
