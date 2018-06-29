@@ -20,16 +20,15 @@ const renderer = ({ days, hours, completed }) => {
 const IndexPage = () => (
 
   <div>
-
+    <div>
     <Countdown
     date={"Dec 23, 2018 14:00:00"}
     renderer={renderer}
     />
-
+    </div>
+    <div>
     <ContactForm />
-
-
-
+    </div>
   </div>
 )
 
