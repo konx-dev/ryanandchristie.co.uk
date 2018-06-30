@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Countdown from 'react-countdown-now'
-import ContactForm from '../components/rsvp-form'
 
 // Wedding Countdown timer
 
@@ -27,9 +26,6 @@ const IndexPage = () => (
         renderer={renderer}
         />
       </div>
-    </div>
-    <div>
-    <ContactForm />
     </div>
   </div>
 )
