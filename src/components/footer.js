@@ -1,14 +1,10 @@
 import React from 'react'
+import HeartSymbol from '../images/heart.svg'
 
 const Footer = () => (
-  <div className="menu-container">
-    <div className="menu">
-      <div className="menu-logo">
-        <img className="logo" alt="logo" />
-      </div>
-      <div className="footer-text">
-        made with <a href="https://oliverjamescox.com">X</a>
-      </div>
+  <div>
+    <div className="footer">
+        made with <a href="https://oliverjamescox.com"><img className="footer-logo" src={HeartSymbol} alt="footer-heart" /></a>
     </div>
 </div>
 )

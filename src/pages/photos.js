@@ -26,12 +26,9 @@ feed_2.run();
 
 const Photos = () => (
   <div>
-    <h1>Our Photos</h1>
     <div id="instafeed_2"></div>
-    <h1>Guest Photos</h1>
+    <h2>#ryanandchristieswedding</h2>
     <div id="instafeed"></div>
-    <Link to="/">Go back to the homepage</Link>
-
   </div>
 )
 

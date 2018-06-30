@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import HeaderLogo from '../images/rc_logo_with-date.svg'
 
 const Header = () => (
-  <div className="menu-container">
+  <div>
     <div className="menu">
       <div className="menu-logo">
-          <img className="logo" alt="logo" />
+          <img className="header-logo" src={HeaderLogo} alt="header-logo" />
       </div>
       <nav className="menu-items">
           <ul>
