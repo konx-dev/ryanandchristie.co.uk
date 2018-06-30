@@ -694,7 +694,7 @@ html > * {
 /* =======  P.2 OUR STORY STYLING ======= */
 
 .our-story__body {
-  margin: 0 2em;
+  margin: 0 1em;
   line-height: 1.75;
 }
 
@@ -707,14 +707,12 @@ html > * {
 .our-story__ryan-quote {
   background: #003941;
   padding: 0.5em 1em;
-  border-radius: 10px;
   color: #ffffff;
 }
 
 .our-story__christie-quote {
   background: #c8858f;
   padding: 0.5em 1em;
-  border-radius: 10px;
   color: #ffffff;
 }
 
