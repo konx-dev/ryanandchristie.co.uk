@@ -18,6 +18,12 @@ const TheVenue = () => (
                 <p>
                     <label>Name(s):<input type="text" name="Attendees" required /></label>   
                 </p>
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                  <label htmlFor="bot-field">Don’t fill this out:{' '}
+                  <input name="bot-field" /> 
+                  </label> 
+                </p>
                 <p>
                     <label>Attendance:
                         <input type="radio" name="RSVP Response" value="Attending" required />Definitely!
