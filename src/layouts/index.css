@@ -691,15 +691,19 @@ html > * {
   margin: 0;
 }
 
-/* =======  P.2 OUR STORY STYLING ======= */
+/* =======  P.1 OUR STORY STYLING ======= */
+
 
 .our-story__body {
-  margin: 0 1em;
+  margin: 0 0.5em;
   line-height: 1.75;
+  background: #ffffff;
+  padding: 1em;
+  font-size: 12px;
 }
 
 .our-story__header {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
   color: #003941;
 }
@@ -708,18 +712,23 @@ html > * {
   background: #003941;
   padding: 0.5em 1em;
   color: #ffffff;
+  font-size: 12px;
 }
 
 .our-story__christie-quote {
   background: #c8858f;
-  padding: 0.5em 1em;
   color: #ffffff;
+  padding: 0.5em 1em;
+  font-size: 12px;
 }
 
 .text-align-right {
   text-align: right;
+
 }
 
 .text-align-left {
   text-align: left;
 }
+
+/* =======  P.0 INDEX STYLING ======= */

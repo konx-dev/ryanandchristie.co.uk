@@ -5,11 +5,6 @@ const ContactForm = () => (
     <div className="contact--container">
         <div className="contact--wrapper">
 
-          <div className="contact--message">
-            <h3>Contact Me</h3>
-            <p>Pop me a message if you would like to work on a project together, or just want to chat.</p>
-          </div>
-
           <div className="contact--fields">
     
             <form 
@@ -36,7 +31,7 @@ const ContactForm = () => (
                     <label>Please specify any dietary, mobility requirements or a message below: <textarea name="Special Requirements / Personal Message" ></textarea></label>
                 </p>
                 <p>
-                    <button type="submit">Send</button>
+                    <button type="submit">Submit</button>
                 </p>
             </form>
 
