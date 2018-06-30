@@ -732,3 +732,79 @@ html > * {
 }
 
 /* =======  P.0 INDEX STYLING ======= */
+
+.countdown__body {
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.countdown__clock {
+  background: #c8858f;
+  color: #ffffff;
+  padding: 0.5em;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+
+/* =======  P.0 RSVP STYLING ======= */
+
+.contact--container {
+  max-width: 1170px;
+  padding: 1em;
+}
+
+.contact--wrapper > * {
+  padding: 1em;
+}
+
+.contact--message h3, .contact--message p {
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  font-family: 'Montserrat';
+  color: #ffffff;
+}
+
+.contact--fields {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.contact--fields form {
+  display: grid;
+  font-size: 12px;
+}
+
+.contact--fields form label {
+  display: block;
+}
+
+.contact--fields form p {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.contact--fields form button {
+  background: #c8858f;
+  border: 0;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+}
+ 
+.contact--fields form textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #cbcdce;
+}
+
+.contact--fields form button:hover, 
+.contact--fields form button:focus {
+  background: #c0737f;
+  outline: 0;
+
+}

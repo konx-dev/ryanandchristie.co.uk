@@ -13,18 +13,20 @@ const renderer = ({ days, hours, completed }) => {
     return <Completionist />;
   } else {
     // Render a countdown
-    return <span>{days} Days and {hours} Hours until we say I do</span>;
+    return <span>{days} Days and {hours} Hours</span>;
   }
 };
 
 const IndexPage = () => (
 
   <div>
-    <div>
-    <Countdown
-    date={"Dec 23, 2018 14:00:00"}
-    renderer={renderer}
-    />
+    <div className="countdown__body">
+      <div className="countdown__clock">
+        <Countdown
+        date={"Dec 23, 2018 14:00:00"}
+        renderer={renderer}
+        />
+      </div>
     </div>
     <div>
     <ContactForm />
