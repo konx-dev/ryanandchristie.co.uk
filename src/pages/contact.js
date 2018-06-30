@@ -54,15 +54,20 @@ export default class Contact extends React.Component {
           </p>
           <p>
             <label>
-              Your name:<br />
+              Your name(s):<br />
               <input type="text" name="name" onChange={this.handleChange} />
             </label>
           </p>
           <p>
-            <label>
-              Your email:<br />
-              <input type="email" name="email" onChange={this.handleChange} />
+            <label>Attendance:
+                <input type="radio" name="RSVP Response" onChange={this.handleChange} required />Definitely!
+                <input type="radio" name="RSVP Response" onChange={this.handleChange} required />Regretfully can't attend
             </label>
+          </p>
+          <p>
+              <label>Total Guests:
+                  <input type="number" name="Total number of Guests" min="0" max="8" onChange={this.handleChange} required />
+              </label>    
           </p>
           <p>
             <label>

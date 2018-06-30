@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Countdown from 'react-countdown-now'
-import ContactForm from '../components/rsvp-form'
+import ContactForm from '../pages/contact'
 
 // Wedding Countdown timer
 
