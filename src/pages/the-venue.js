@@ -2,27 +2,16 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const TheVenue = () => (
-  <div>
-    <h1>The Venue</h1>
-    <div className="contact--container">
-        <div className="contact--wrapper">
+    <div>
+        <h1>The Venue</h1>
 
-          <div className="contact--fields">
-    
-            <form 
+        <form 
               name="RSVP-ContactForm" 
               method="POST"  
-              data-netlify="true" 
-              data-netlify-honeypot="bot-field"
+              netlify
             >
                 <p>
                     <label>Name(s):<input type="text" name="Attendees" required /></label>   
-                </p>
-                <input type="hidden" name="form-name" value="contact" />
-                <p hidden>
-                  <label htmlFor="bot-field">Don’t fill this out:{' '}
-                  <input name="bot-field" /> 
-                  </label> 
                 </p>
                 <p>
                     <label>Attendance:
@@ -43,12 +32,8 @@ const TheVenue = () => (
                 </p>
             </form>
 
-          </div>
-        </div>
-    </div>
-
     <Link to="/">Go back to the homepage</Link>
-  </div>
+    </div>
 )
 
 export default TheVenue

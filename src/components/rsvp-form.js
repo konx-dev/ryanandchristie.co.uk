@@ -2,16 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const ContactForm = () => (
-    <div className="contact--container">
-        <div className="contact--wrapper">
-
-          <div className="contact--fields">
-    
+            <div>
             <form 
               name="RSVP-ContactForm" 
               method="POST"  
-              data-netlify="true" 
-              data-netlify-honeypot="bot-field"
+              netlify
             >
                 <p>
                     <label>Name(s):<input type="text" name="Attendees" required /></label>   
@@ -34,10 +29,7 @@ const ContactForm = () => (
                     <button type="submit">Submit</button>
                 </p>
             </form>
-
-          </div>
-        </div>
-    </div>
+            </div>
 )
 
 export default ContactForm
