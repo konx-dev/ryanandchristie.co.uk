@@ -35,7 +35,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <h1>Contact</h1>
+        <h1>RSVP</h1>
         <form
           name="contact"
           method="post"
@@ -54,14 +54,14 @@ export default class Contact extends React.Component {
           </p>
           <p>
             <label>
-              Your name(s):<br />
-              <input type="text" name="name" onChange={this.handleChange} />
+              Name(s):<br />
+              <input type="text" name="name" onChange={this.handleChange} required />
             </label>
           </p>
           <p>
             <label>Attendance:
-                <input type="radio" name="RSVP Response" onChange={this.handleChange} required />Definitely!
-                <input type="radio" name="RSVP Response" onChange={this.handleChange} required />Regretfully can't attend
+                <input type="radio" name="RSVP Response" value="Yes" onChange={this.handleChange} required />Definitely!
+                <input type="radio" name="RSVP Response" value="No" onChange={this.handleChange} required />Regretfully can't attend
             </label>
           </p>
           <p>
