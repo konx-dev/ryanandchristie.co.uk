@@ -25,9 +25,13 @@ feed_2.run();
 
 const Photos = () => (
   <div className="photo-container">
+    <div>
+      SVG Title | Our Photos
+    </div>
     <div id="instafeed_2"></div>
-    <h2>#ryanandchristieswedding</h2>
+    <div>Upload your photos to your instagram with the hashtag #ryanandchristieswedding and see them all here</div>
     <div id="instafeed"></div>
+    <div>If you don't use instagram, you can email the pictures to us here, we can't wait to see everyones moments captured from the day!</div>
   </div>
 )
 

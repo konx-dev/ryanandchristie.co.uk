@@ -643,6 +643,8 @@ html > * {
 .menu {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  background: #ffffff;
+  margin-bottom: 1em;
 }
 
 .menu-logo {
@@ -652,7 +654,7 @@ html > * {
 .menu-items {
   grid-row: 2;
   grid-column: 1 / span 3;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .menu-items ul {
@@ -700,7 +702,7 @@ html > * {
   line-height: 1.75;
   background: #ffffff;
   padding: 1em;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .our-story__header {
@@ -713,14 +715,14 @@ html > * {
   background: #003941;
   padding: 0.5em 1em;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .our-story__christie-quote {
   background: #c8858f;
   color: #ffffff;
   padding: 0.5em 1em;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .text-align-right {
@@ -750,27 +752,58 @@ html > * {
   line-height: 1;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-
+  margin: 1em;
 }
+
+.index-notification {
+  background: #ffffff;
+  padding: 1em 1em 2em 1em;
+  line-height: 1.25;
+  font-size: 10px;
+  text-align: center;
+}
+
+.index-venue {
+  background: #ffffff;
+  padding: 1em;
+  text-align: center;
+  font-size: 16px;
+}
+
+.index-venue-address {
+  line-height: 1.25;
+  font-size: 24px;
+  color: #c78690;
+}
+
+.index-gift-message {
+  background: #ffffff;
+  padding: 1em;
+  text-align: center;
+}
+
+.index-gift-message__body {
+  font-size: 20px;
+  color: #c78690;
+  margin: 0 2em;
+}
+
 
 /* =======  P.0 RSVP STYLING ======= */
 
 .rsvp-form {
   display: grid;
   background: #ffffff;
-  padding: 1em 1em 4em 1em;
+  padding: 1em 1em 0.5em 1em;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .rsvp-body {
   border: lightgray solid 1px;
   border-radius: 5px;
   padding: 1em;
-  grid-column: 2;
+  margin: 0 2em;
 }
 
 .rsvp-name {
@@ -811,7 +844,8 @@ html > * {
 }
 
 .rsvp-submit button {
-  background: lightgray;
+  background: #c78690;
+  color: #ffffff;
   outline: 0;
   border-style: none;
   padding: 0.5em 1em;
@@ -823,12 +857,31 @@ html > * {
   margin-bottom: 1em;
 }
 
-.section-header {
+/* =======  P.2 VENUE STYLING ======= */
+
+.venue-directions {
+  background: #ffffff;
+  padding: 1em;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.venue-directions-body {
+  margin: 0 2em;
+}
+
+.venue-nearby, .venue-transport {
+  background: #ffffff;
+  padding: 1em;
+  line-height: 1.5;
+  font-size: 16px;
   text-align: center;
-  font-family: 'Montserrat';
-  font-size: 30px;
+}
+
+.venue-nearby p, .venue-transport p {
   margin: 0;
 }
+
 
 /* =======  P.4 PHOTO STYLING ======= */
 

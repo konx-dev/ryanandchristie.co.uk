@@ -36,7 +36,6 @@ export default class Contact extends React.Component {
     return (
       <div className="rsvp-form">
         <div className="rsvp-body">
-          <h1 className="section-header">RSVP</h1>
           <form
             name="RSVP"
             method="post"
@@ -83,7 +82,7 @@ export default class Contact extends React.Component {
               </label>
             </div>
             <div className="rsvp-submit">
-              <button type="submit">Send</button>
+              <button type="submit">Submit</button>
             </div>
             <div data-netlify-recaptcha></div>
           </form>

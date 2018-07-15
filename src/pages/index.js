@@ -36,8 +36,41 @@ const IndexPage = () => (
       />
     </div>
   </div>
+  <div className="index-venue">
+    <div>
+      SVG Header goes here
+    </div>
+    <div className="index-venue-header">
+      Wedding &amp; Reception
+    </div>
+    <div className="index-venue-address">
+      Donington Park Farmhouse<br></br>
+      Melbourne Road<br></br>
+      Isley Walton<br></br>
+      Castle Donington<br></br>
+      DE74 2RN<br></br>
+    </div>
+  </div>
+  <div className="index-gift-message">
+    <div>
+      SVG Header goes here
+    </div>
+    <div className="index-gift-message__body">
+      <p>The most important gift to us is having you share our special day.</p>
+      <p>But if you wish to contribute in some other way, we would love a few pennies to put in our pot for our honeymoon trip after tying the knot.</p>
+    </div>
+  </div>
   <div>
+    <div>
+      SVG Header goes here
+    </div>
+    <div>
+      Kindly respond by X
+    </div>
     <ContactForm />
+  </div>
+  <div className="index-notification">
+    Please make sure the recaptcha is completed in order to successfully submit. If you have any issues with the form please contact or submit your RSVP information <a href="mailto:ryanandchristiewedding2018@gmail.com">here</a>
   </div>
 </div>
 )
