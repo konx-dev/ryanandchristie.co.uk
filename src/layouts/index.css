@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 
 html {
@@ -636,12 +637,12 @@ html > * {
 /* =======  HEADER STYLING ======= */
 
 .header-logo {
-  margin: 0;;
+  margin: 0;
 }
 
 .menu {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
 .menu-logo {
@@ -737,13 +738,17 @@ html > * {
   padding: 0.5em;
   display: grid;
   grid-template-columns: 1fr;
+  background: #ffffff;
+  border-radius: 5px;
 }
 
 .countdown__clock {
-  background: #c8858f;
-  color: #ffffff;
+  color: #333333;
   padding: 0.5em;
-  font-size: 20px;
+  font-size: 40px;
+  font-family: 'EB Garamond', serif;
+  line-height: 1;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 1em;
   margin-left: 1em;
@@ -753,3 +758,99 @@ html > * {
 
 /* =======  P.0 RSVP STYLING ======= */
 
+.rsvp-form {
+  display: grid;
+  background: #ffffff;
+  padding: 1em 1em 4em 1em;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+.rsvp-body {
+  border: lightgray solid 1px;
+  border-radius: 5px;
+  padding: 1em;
+  grid-column: 2;
+}
+
+.rsvp-name {
+  margin: 1em 0;
+  font-size: 16px;
+}
+.rsvp-name input {
+  width: 100%;
+}
+
+.rsvp-attendance {
+  margin: 1em 0;
+  font-size: 16px;
+}
+
+.rsvp-attendance-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.rsvp-guests {
+  font-size: 16px;
+}
+
+.rsvp-guests input {
+  width: 100%;
+}
+
+.rsvp-message {
+  font-size: 16px;
+  margin: 1em 0;
+}
+
+.rsvp-message textarea {
+  width: 100%;
+}
+
+.rsvp-submit button {
+  background: lightgray;
+  outline: 0;
+  border-style: none;
+  padding: 0.5em 1em;
+  width: 100%;
+  font-size: 16px;
+}
+
+.rsvp-submit {
+  margin-bottom: 1em;
+}
+
+.section-header {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 30px;
+  margin: 0;
+}
+
+/* =======  P.4 PHOTO STYLING ======= */
+
+.photo-container {
+  background: #ffffff;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+
+#instafeed_2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+#instafeed_2 img, #instafeed img {
+  border-radius: 5px;
+}
+
+#instafeed {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
