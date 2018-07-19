@@ -65,7 +65,7 @@ export default class Contact extends React.Component {
                     <input type="radio" name="RSVP Response" value="Yes" onChange={this.handleChange} required /> Definitely!
                   </div>
                   <div className="rsvp-attendance-option_2">
-                    <input type="radio" name="RSVP Response" value="No" onChange={this.handleChange} required /> Regretfully can't attend
+                    <input type="radio" name="RSVP Response" value="No" onChange={this.handleChange} required /> Regretfully No
                   </div>
                 </div>
               </label>

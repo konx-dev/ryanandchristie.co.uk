@@ -20,7 +20,6 @@ const Layout = ({ children, data }) => (
       style={{
         margin: '0 auto',
         maxWidth: 960,
-        padding: '1em',
         background: '#fafafa'
       }}
     >

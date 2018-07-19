@@ -1,19 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import HowWeMet from '../images/titles/how-we-met.svg'
+import TheProposal from '../images/titles/the-proposal.svg'
 
 const OurStory = () => (
   <div className="our-story__container">
     <div className="our-story__body">
-      <div className="our-story__header">
-        How we met
+      <div>
+        <img className="sec-med" src={HowWeMet} alt="Our Wedding" />
       </div>
       <div className="our-story__body-copy">
       <p>Over six years ago, a sparkly eyed and fresh faced Ryan Hunt staggered into his friend’s student housing where he was, as per usual, freeloading for the night and crashing on the sofa. It was his birthday, and at the ripe age of 24, Ryan was ready to hit the town and drink until his kidneys hurt. He could never have imagined that would be the night he’d meet the love of his life. Christie was sat in her pyjamas tolerating the football until she could watch Britain’s Got Talent.</p>
       <p>Cupid took the form of a mutual friend – Claire Seabridge – who said Ryan and Christie would be a good match because “you both overthink things”. So they exchanged numbers and after a good month of ducking his texts, Christie eventually gave into to Ryan’s barrage of charm and they agreed to go on a date.</p> 
       <p>They’ve been together ever since. Not even snails or lightning could tear them apart.</p>
       </div>
-      <div className="our-story__header">
-        The proposal
+      <div>
+        <img className="sec-med" src={TheProposal} alt="Our Wedding" />
       </div>
       <div className="our-story__body-copy">
         <p>In September 2017, Ryan and Christie went to Croatia. Unbeknownst to Christie, there was a diamond ring smuggled aboard the luggage and stashed into a particularly large bundle of socks. All Ryan had to do was bide his time and wait for the perfect romantic moment to strike. This took some time. Despite being known for his romantic ways, the opportunity never arose! A trip to the beautiful waterfalls of Krka National Park would surely provide the opportunity to propose...</p> 

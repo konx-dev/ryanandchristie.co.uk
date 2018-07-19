@@ -629,7 +629,7 @@ pre tt:after {
 }
 
 html > * {
-  background: #fafafa;
+  background: #fafafa url(../images/bckground-greyscale.svg);
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -697,11 +697,15 @@ html > * {
 /* =======  P.1 OUR STORY STYLING ======= */
 
 
+.our-story__container {
+  margin-top: 50px;
+}
+
 .our-story__body {
   margin: 0 0.5em;
   line-height: 1.75;
   background: #ffffff;
-  padding: 1em;
+  padding: 2em;
   font-size: 14px;
 }
 
@@ -737,22 +741,21 @@ html > * {
 /* =======  P.0 INDEX STYLING ======= */
 
 .countdown__body {
-  padding: 0.5em;
+  padding: 0 0.5em 0.5em 0.5em;
   display: grid;
   grid-template-columns: 1fr;
   background: #ffffff;
   border-radius: 5px;
+  margin-top: -50px;
 }
 
 .countdown__clock {
-  color: #333333;
-  padding: 0.5em;
+  color: #c78690;
   font-size: 40px;
   font-family: 'EB Garamond', serif;
   line-height: 1;
   font-weight: 400;
   text-align: center;
-  margin: 1em;
 }
 
 .index-notification {
@@ -768,12 +771,14 @@ html > * {
   padding: 1em;
   text-align: center;
   font-size: 16px;
+  margin-top: -25px;
 }
 
 .index-venue-address {
   line-height: 1.25;
   font-size: 24px;
   color: #c78690;
+  padding-top: 5px;
 }
 
 .index-gift-message {
@@ -828,10 +833,12 @@ html > * {
 
 .rsvp-guests {
   font-size: 16px;
+  padding-top: 20px;
 }
 
 .rsvp-guests input {
-  width: 100%;
+  width: 25%;
+  margin-left: 10px;
 }
 
 .rsvp-message {
@@ -853,9 +860,22 @@ html > * {
   font-size: 16px;
 }
 
+.rsvp-submit button:hover, .rsvp-submit button:focus {
+  background: #e0aab5;
+}
+
 .rsvp-submit {
   margin-bottom: 1em;
 }
+
+.rsvp-message {
+  background: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
 
 /* =======  P.2 VENUE STYLING ======= */
 
@@ -906,4 +926,39 @@ html > * {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
+}
+
+/* =======  P.X TITLE STYLING ======= */
+
+.sec-title {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sec-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #ffffff;
+  padding-top: 40px;
+}
+
+.sec-sml {
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.sec-med {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.sec-rsvp {
+  width: 35%;
+  height: auto;
+  margin: 0 auto;
 }

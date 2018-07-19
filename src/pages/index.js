@@ -2,10 +2,14 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Countdown from 'react-countdown-now'
 import ContactForm from '../pages/contact'
+import OurWedding from '../images/titles/our-wedding.svg'
+import TheVenue from '../images/titles/venue.svg'
+import GiftIdeas from '../images/titles/gift-ideas.svg'
+import RSVP from '../images/titles/RSVP.svg'
 
 // Wedding Countdown timer
 
-const Completionist = () => <span>wedding message goes here, when countdown reaches zero</span>;
+const Completionist = () => <span>December 23rd 2018</span>;
 
 // Renderer callback with condition
 const renderer = ({ days, hours, minutes, completed }) => {
@@ -20,7 +24,7 @@ const renderer = ({ days, hours, minutes, completed }) => {
 
     // Render a countdown
 
-    return <span>{days} Days &amp; {hours} hours until the big day!</span>;
+    return <span>{days} Days &amp; {hours} hours</span>;
 
   }
 };
@@ -28,6 +32,9 @@ const renderer = ({ days, hours, minutes, completed }) => {
 const IndexPage = () => (
 
 <div>
+  <div className="sec-container">
+    <img className="sec-title" src={OurWedding} alt="Our Wedding" />
+  </div>
   <div className="countdown__body">
     <div className="countdown__clock">
       <Countdown
@@ -36,10 +43,10 @@ const IndexPage = () => (
       />
     </div>
   </div>
+  <div className="sec-container">
+    <img className="sec-sml" src={TheVenue} alt="Our Wedding" />
+  </div>
   <div className="index-venue">
-    <div>
-      SVG Header goes here
-    </div>
     <div className="index-venue-header">
       Wedding &amp; Reception
     </div>
@@ -51,21 +58,21 @@ const IndexPage = () => (
       DE74 2RN<br></br>
     </div>
   </div>
+  <div className="sec-container">
+    <img className="sec-med" src={GiftIdeas} alt="Our Wedding" />
+  </div>
   <div className="index-gift-message">
-    <div>
-      SVG Header goes here
-    </div>
     <div className="index-gift-message__body">
       <p>The most important gift to us is having you share our special day.</p>
       <p>But if you wish to contribute in some other way, we would love a few pennies to put in our pot for our honeymoon trip after tying the knot.</p>
     </div>
   </div>
   <div>
-    <div>
-      SVG Header goes here
+    <div className="sec-container">
+      <img className="sec-rsvp" src={RSVP} alt="RSVP" />
     </div>
-    <div>
-      Kindly respond by X
+    <div className="rsvp-message">
+      Kindly respond by Friday, 31st August
     </div>
     <ContactForm />
   </div>
