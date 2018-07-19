@@ -740,6 +740,10 @@ html > * {
 
 /* =======  P.0 INDEX STYLING ======= */
 
+.index-container {
+  margin-top: 50px;
+}
+
 .countdown__body {
   padding: 0 0.5em 0.5em 0.5em;
   display: grid;
@@ -879,6 +883,27 @@ html > * {
 
 /* =======  P.2 VENUE STYLING ======= */
 
+.venue-container {
+  margin-top: 50px;
+}
+
+.venue-on-the-day {
+  background: #ffffff;
+  padding: 1em;
+  text-align: center;
+}
+
+.rc-subheader {
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: 'EB Garamond', serif;
+  line-height: 1;
+  font-weight: 400;
+  padding: 0.5em;
+  color: #043940;
+
+}
+
 .venue-directions {
   background: #ffffff;
   padding: 1em;
@@ -902,36 +927,57 @@ html > * {
   margin: 0;
 }
 
+a {
+  color: #c78690;
+}
+
 
 /* =======  P.4 PHOTO STYLING ======= */
+
+.photo-text {
+  text-align: center;
+  line-height: 1.25;
+}
+
 
 .photo-container {
   background: #ffffff;
   padding: 1em;
   border-radius: 5px;
+  font-size: 12px;
+  padding-bottom: 3em;
+  margin-top: 50px;
 }
 
 
 #instafeed_2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
+  grid-gap: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #instafeed_2 img, #instafeed img {
   border-radius: 5px;
+  margin: 0;
+  display: block;
 }
 
 #instafeed {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
+  grid-gap: 10px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* =======  P.X TITLE STYLING ======= */
 
 .sec-title {
-  width: 60%;
+  width: 600px;
   height: auto;
   margin: 0 auto;
 }
@@ -940,25 +986,78 @@ html > * {
   display: grid;
   grid-template-columns: 1fr;
   background: #ffffff;
-  padding-top: 40px;
+}
+
+.sec-container-padding {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #ffffff;
 }
 
 .sec-sml {
-  width: 30%;
+  width: 300px;
   height: auto;
   margin: 0 auto;
   margin-top: 40px;
 }
 
+.sec-sml-l {
+  width: 300px;
+  height: auto;
+  margin: 0;
+  margin-top: 20px;
+  padding-left: 2em;
+}
+
 .sec-med {
-  width: 50%;
+  width: 500px;
   height: auto;
   margin: 0 auto;
   margin-top: 40px;
 }
 
 .sec-rsvp {
-  width: 35%;
+  width: 350px;
   height: auto;
   margin: 0 auto;
+}
+
+.sec-logo {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sec-container-sml {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #ffffff;
+}
+
+/* =======  P.X THANKS PAGE STYLING ======= */
+
+.thanks-container {
+  background: #ffffff;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.thanks-header {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  padding: 0.5em 0 0.5em 0;
+  color: #c78690;
+}
+
+.thanks-subheader {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.thanks-assistants {
+  display: block;
+  margin: 0 auto;
+  padding: 1em 0;
 }

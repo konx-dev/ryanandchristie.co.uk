@@ -9,7 +9,7 @@ import RSVP from '../images/titles/RSVP.svg'
 
 // Wedding Countdown timer
 
-const Completionist = () => <span>December 23rd 2018</span>;
+const Completionist = () => <span>December 23rd, 2018</span>;
 
 // Renderer callback with condition
 const renderer = ({ days, hours, minutes, completed }) => {
@@ -31,7 +31,7 @@ const renderer = ({ days, hours, minutes, completed }) => {
 
 const IndexPage = () => (
 
-<div>
+<div className="index-container">
   <div className="sec-container">
     <img className="sec-title" src={OurWedding} alt="Our Wedding" />
   </div>
@@ -44,7 +44,7 @@ const IndexPage = () => (
     </div>
   </div>
   <div className="sec-container">
-    <img className="sec-sml" src={TheVenue} alt="Our Wedding" />
+    <img className="sec-sml" src={TheVenue} alt="The Venue" />
   </div>
   <div className="index-venue">
     <div className="index-venue-header">
@@ -59,7 +59,7 @@ const IndexPage = () => (
     </div>
   </div>
   <div className="sec-container">
-    <img className="sec-med" src={GiftIdeas} alt="Our Wedding" />
+    <img className="sec-med" src={GiftIdeas} alt="Gift Ideas" />
   </div>
   <div className="index-gift-message">
     <div className="index-gift-message__body">

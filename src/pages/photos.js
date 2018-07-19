@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Instafeed from 'instafeed.js'
+import OurPhotos from '../images/titles/our-photos.svg'
 
 const feed = new Instafeed({
   get: 'tagged',
@@ -25,13 +26,13 @@ feed_2.run();
 
 const Photos = () => (
   <div className="photo-container">
-    <div>
-      SVG Title | Our Photos
+    <div className="sec-container">
+      <img className="sec-med" src={OurPhotos} alt="The Venue" />
     </div>
     <div id="instafeed_2"></div>
-    <div>Upload your photos to your instagram with the hashtag #ryanandchristieswedding and see them all here</div>
+    <div className="photo-text">Upload your photos to your instagram with the hashtag <a href="https://www.instagram.com/explore/tags/ryanandchristieswedding/?hl=en"><strong>#ryanandchristieswedding</strong></a> and see them all here</div>
     <div id="instafeed"></div>
-    <div>If you don't use instagram, you can email the pictures to us here, we can't wait to see everyones moments captured from the day!</div>
+    <div className="photo-text">You can always email the pictures to us <a href="mailto:ryanandchristiewedding2018@gmail.com">here</a>, we can't wait to see everyones moments captured from the day!</div>
   </div>
 )
 
