@@ -6,6 +6,7 @@ import ParkImg from '../images/park-farmhouse-outside.jpg'
 import ParkMap from '../images/park-farmhouse-gmap.png'
 import Transport from '../images/titles/Transport.svg'
 import Hotels from '../images/titles/hotels.svg'
+import OnTheDay from '../images/titles/on-the_day.svg'
 
 const TheVenue = () => (
     <div className="venue-container">
@@ -44,8 +45,8 @@ const TheVenue = () => (
             </div>
         </div>
         <div className="venue-on-the-day">
-            <div>
-                On the Day | svg goes here
+        <div className="sec-container-sml">
+                <img className="sec-med" src={OnTheDay} alt="On The Day" />
             </div>
             <div>
                 <div className="rc-subheader">Day Guests</div>
@@ -57,7 +58,7 @@ const TheVenue = () => (
             </div>
             <div>
                 <div className="rc-subheader">Important Information</div>
-                <div>Bring cash! The venue bar <strong>accepts cash only</strong>. There is a cash machine but it there is a small charge for withdrawals.</div>
+                <div>Bring cash! The venue bar <strong>accepts cash only</strong>. There is a cash machine but there is a small charge for withdrawals.</div>
             </div>
             <div>
                 <div className="rc-subheader">Special Guest</div>
@@ -67,7 +68,7 @@ const TheVenue = () => (
         </div>
         <div className="venue-nearby">
             <div className="sec-container-sml">
-                <img className="sec-sml" src={Hotels} alt="Hotels" />
+                <img className="sec-xsml" src={Hotels} alt="Hotels" />
             </div>
             <div className="venue-nearby-body">
                 <p>

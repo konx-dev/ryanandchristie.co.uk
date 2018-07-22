@@ -645,9 +645,9 @@ html > * {
   grid-template-columns: 1fr 2fr 1fr;
   background: #ffffff;
   margin-bottom: 1em;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
 }
 
 .menu-logo {
@@ -702,16 +702,17 @@ html > * {
 
 .our-story__container {
   margin-top: 50px;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
-  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  border-radius: 5px;
 }
 
 .our-story__body {
   margin: 0;
   line-height: 1.75;
   background: #ffffff;
-  padding: 2em;
+  padding: 1em;
   font-size: 14px;
 }
 
@@ -726,6 +727,7 @@ html > * {
   padding: 0.5em 1em;
   color: #ffffff;
   font-size: 14px;
+  margin: 0;
 }
 
 .our-story__christie-quote {
@@ -733,6 +735,7 @@ html > * {
   color: #ffffff;
   padding: 0.5em 1em;
   font-size: 14px;
+  margin: 0;
 }
 
 .text-align-right {
@@ -748,6 +751,10 @@ html > * {
 
 .index-container {
   margin-top: 50px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  border-radius: 5px;
 }
 
 .countdown__body {
@@ -786,7 +793,7 @@ html > * {
 
 .index-venue-address {
   line-height: 1.25;
-  font-size: 24px;
+  font-size: 20px;
   color: #c78690;
   padding-top: 5px;
 }
@@ -801,6 +808,14 @@ html > * {
   font-size: 20px;
   color: #c78690;
   margin: 0 2em;
+}
+
+@media (max-width: 480px) {
+
+  .index-venue-address {
+    font-size: 16px;
+  }
+
 }
 
 
@@ -891,6 +906,10 @@ html > * {
 
 .venue-container {
   margin-top: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
 }
 
 .venue-on-the-day {
@@ -900,12 +919,12 @@ html > * {
 }
 
 .rc-subheader {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 10px;
+  font-size: 26px;
   font-family: 'EB Garamond', serif;
   line-height: 1;
   font-weight: 400;
-  padding: 0.5em;
+  padding: 0.5em 0 0.25em 0;
   color: #043940;
 
 }
@@ -914,11 +933,11 @@ html > * {
   background: #ffffff;
   padding: 1em;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .venue-directions-body {
-  margin: 0 2em;
+  margin: 0 1em;
 }
 
 .venue-nearby, .venue-transport {
@@ -949,10 +968,12 @@ a {
 .photo-container {
   background: #ffffff;
   padding: 1em;
-  border-radius: 5px;
   font-size: 12px;
   padding-bottom: 3em;
   margin-top: 50px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
 }
 
 
@@ -961,8 +982,8 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #instafeed_2 img, #instafeed img {
@@ -975,10 +996,23 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media (max-width: 480px) {
+
+  #instafeed {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #instafeed_2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
 
 /* =======  P.X TITLE STYLING ======= */
 
@@ -1005,7 +1039,14 @@ a {
   width: 300px;
   height: auto;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 50px;
+}
+
+.sec-xsml {
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .sec-sml-l {
@@ -1017,10 +1058,10 @@ a {
 }
 
 .sec-med {
-  width: 500px;
+  width: 400px;
   height: auto;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .sec-rsvp {
@@ -1041,12 +1082,28 @@ a {
   background: #ffffff;
 }
 
+@media (max-width: 480px) {
+
+  .sec-med, .sec-sml, .sec-sml-l {
+    width: 200px
+  }
+
+  .sec-xsml {
+    width: 170px;
+  }
+
+}
+
 /* =======  P.X THANKS PAGE STYLING ======= */
 
 .thanks-container {
   background: #ffffff;
   padding: 1em;
   margin: 0 auto;
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.10);
 }
 
 .thanks-header {
