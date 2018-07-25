@@ -71,15 +71,77 @@ const TheVenue = () => (
                 <img className="sec-xsml" src={Hotels} alt="Hotels" />
             </div>
             <div className="venue-nearby-body">
-                <p>
-                    Hotel Name
-                </p>
-                <p>
-                    Address
-                </p>
-                <p>
-                    Website | contact details
-                </p>
+                <div className="venue-hotel-listing">
+                    <p>
+                        <strong>Melbourne View Hotel</strong>
+                    </p>
+                    <p>
+                        Ramsley Fields, Station Rd, Melbourne, Derby DE73 8BR
+                    </p>
+                    <p>
+                        <a target="_blank" href="http://www.melbourneviewhotel.co.uk/">www.melbourneviewhotel.co.uk</a> | 01332 865 353
+                    </p>
+                </div>
+                <div className="venue-hotel-listing">
+                    <p>
+                        <strong>Harpurs of Melbourne</strong>
+                    </p>
+                    <p>
+                        2 Derby Rd, Melbourne, Derby DE73 8FE
+                    </p>
+                    <p>
+                        <a target="_blank" href="http://www.harpursofmelbourne.co.uk/">www.harpursofmelbourne.co.uk</a> | 01332 862 134
+                    </p>
+                </div>
+                <div className="venue-hotel-listing">
+                    <p>
+                        <strong>Jurys Inn - East Mids Airport</strong>
+                    </p>
+                    <p>
+                        Ashby Rd, Castle Donington, Derby DE74 2SH
+                    </p>
+                    <p>
+                        <a target="_blank" href="http://www.jurysinns.com">www.jurysinns.com</a> | 0161 774 2985
+                    </p>
+                </div>
+                <div className="venue-hotel-listing">
+                    <p>
+                        <strong>Donington Cottage Guest House</strong>
+                    </p>
+                    <p>
+                        37-43 High St, Castle Donington, Derby DE74 2PP
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://www.doningtoncottage.com/">www.doningtoncottage.com</a> | 01332 810 618
+                    </p>
+                </div>
+                <div className="venue-hotel-listing">
+                    <p>
+                        <strong>Donington Manor Hotel</strong>
+                    </p>
+                    <p>
+                        High St, Castle Donington DE74 2PP
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://www.doningtoncottage.com/">www.doningtonmanorhotel.co.uk</a> | 01332 810 253
+                    </p>
+                </div>
+                <div className="venue-hotel-listing">
+                    <p>
+                        <strong>The Priest House Hotel</strong>
+                    </p>
+                    <p>
+                        Kings Mills, Castle Donington, Derby DE74 2RR
+                    </p>
+                    <p>
+                        <a target="_blank" href="http://www.thepriesthouse.co.uk/">www.thepriesthouse.co.uk</a> | 01332 810 649
+                    </p>
+                </div>
+                <div className="venue-hotel-listing-alt">
+                    <p>
+                        Additionally sites like <a target="_blank" href="https://www.booking.com">booking.com</a>, <a target="_blank" href="https://www.airbnb.co.uk/">airbnb.com</a> and <a target="_blank" href="https://www.google.co.uk/maps/place/Holiday+Inn+Express+East+Midlands+Airport/@52.841031,-1.4142918,13z/data=!4m20!1m12!2m11!1sHotels!3m6!1sHotels!2sDonington+Park+Farmhouse+Hotel,+Melbourne+RoadIsley+Walton,+Castle+Donington,+DE74+2RN,+Derby+DE74+2RN!3s0x4879e4e00aa09e9f:0xaef0d3403c3c3702!4m2!1d-1.3862817!2d52.8248864!5m2!5m1!1s2018-07-23!3m6!1s0x4879c12a25ac9715:0x441bf850b6e74506!5m1!1s2018-07-23!8m2!3d52.8250424!4d-1.3130379?hl=en-GB">googlemaps</a> list all hotels within the local area. All within a ten minute car ride and allow for room price comparison with online booking.    
+                    </p>
+                </div>
             </div>
         </div>
         <div className="venue-transport">

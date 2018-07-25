@@ -946,6 +946,7 @@ html > * {
   line-height: 1.5;
   font-size: 16px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .venue-nearby p, .venue-transport p {
@@ -956,12 +957,36 @@ a {
   color: #c78690;
 }
 
+.venue-hotel-listing {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.venue-hotel-listing-alt {
+  font-size: 14px;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 25px;
+}
+
+
+
+.venue-nearby-body {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 
 /* =======  P.4 PHOTO STYLING ======= */
 
 .photo-text {
   text-align: center;
   line-height: 1.25;
+  margin: 0 0 10px 0;
 }
 
 
@@ -986,7 +1011,7 @@ a {
   margin-bottom: 25px;
 }
 
-#instafeed_2 img, #instafeed img {
+#instafeed_2 img, #instafeed img, #instafeed_3 img {
   border-radius: 5px;
   margin: 0;
   display: block;
@@ -1001,13 +1026,22 @@ a {
   margin-bottom: 10px;
 }
 
+#instafeed_3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 480px) {
 
   #instafeed {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #instafeed_2 {
+  #instafeed_2, #instafeed_3 {
     grid-template-columns: 1fr 1fr;
   }
 
