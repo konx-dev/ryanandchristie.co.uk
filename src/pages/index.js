@@ -43,7 +43,7 @@ const IndexPage = () => (
       />
     </div>
   </div>
-  <div className="sec-container">
+  <div className="sec-container-sml">
     <img className="sec-sml" src={TheVenue} alt="The Venue" />
   </div>
   <div className="index-venue">
@@ -58,8 +58,8 @@ const IndexPage = () => (
       DE74 2RN<br></br>
     </div>
   </div>
-  <div className="sec-container">
-    <img className="sec-med" src={GiftIdeas} alt="Gift Ideas" />
+  <div className="sec-container-sml">
+    <img className="sec-giftidea" src={GiftIdeas} alt="Gift Ideas" />
   </div>
   <div className="index-gift-message">
     <div className="index-gift-message__body">
@@ -68,14 +68,14 @@ const IndexPage = () => (
     </div>
   </div>
   <div>
-    <div className="sec-container">
-      <img className="sec-rsvp" src={RSVP} alt="RSVP" />
-    </div>
-    <div className="rsvp-message">
-      Kindly respond by Friday, 31st August
+    <div className="sec-container-sml">
+      <img className="sec-sml_alt" src={RSVP} alt="RSVP" />
     </div>
     <ContactForm />
   </div>
+  <div className="rsvp-message">
+      Kindly respond by Friday, 31st August
+    </div>
   <div className="index-notification">
     Please make sure the recaptcha is completed in order to successfully submit. If you have any issues with the form please contact or submit your RSVP information <a href="mailto:ryanandchristiewedding2018@gmail.com">here</a>
   </div>
