@@ -966,7 +966,7 @@ html > * {
   background: #e0aab5;
 }
 
-.rsvp-submit button:hover::after{
+.rsvp-submit button:focus::after{
   content:'ted please wait..';
 }
 
