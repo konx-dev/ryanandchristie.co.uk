@@ -966,6 +966,10 @@ html > * {
   background: #e0aab5;
 }
 
+.rsvp-submit button:hover::after{
+  content:'ted please wait..';
+}
+
 .rsvp-recaptcha {
   margin: 0;
   grid-row: 5;
