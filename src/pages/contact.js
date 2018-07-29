@@ -36,7 +36,7 @@ export default class Contact extends React.Component {
     return (
       <div className="rsvp-form">
         <div className="rsvp-body">
-          <form
+          <form className="form-body"
             name="RSVP"
             method="post"
             action="/thanks/"
@@ -71,20 +71,26 @@ export default class Contact extends React.Component {
               </label>
             </div>
             <div className="rsvp-guests">
-                <label>Total Guests:
+                <label>Guests:
                     <input type="number" name="Total number of Guests" min="0" max="8" onChange={this.handleChange} required />
                 </label>    
             </div>
-            <div className="rsvp-message">
+            <div className="rsvp-messagebox">
               <label>
                 Message:<br />
-                <textarea name="message" rows="4" onChange={this.handleChange} />
+                <textarea name="message" rows="3" onChange={this.handleChange} />
               </label>
             </div>
+            <div className="rsvp-songbox">
+              <label>
+                Song choices:<br />
+                <textarea name="Song choices" rows="2" onChange={this.handleChange} />
+              </label>
+            </div>
+            <div data-netlify-recaptcha></div>
             <div className="rsvp-submit">
               <button type="submit">Submit</button>
             </div>
-            <div data-netlify-recaptcha></div>
           </form>
           </div>
       </div>

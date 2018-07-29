@@ -709,10 +709,12 @@ html > * {
 }
 
 .our-story__quoteblock {
-  display: flex;
+  display: grid;
   margin: 0 auto;
   margin-bottom: 20px;
-  justify-content: center;
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
 }
 
 .our-story__body {
@@ -737,6 +739,8 @@ html > * {
   margin: 0 0.5em;
   text-align: center;
   border-radius: 10px;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .our-story__christie-quote {
@@ -747,7 +751,27 @@ html > * {
   margin: 0;
   text-align: center;
   border-radius: 10px;
+  grid-column: 3;
+  grid-row: 2;
 }
+
+@media (max-width: 480px) {
+    
+  .our-story__quoteblock {
+    grid-template-columns: 1fr;
+  }
+
+  .our-story__ryan-quote {
+    grid-column: 1;
+  }
+
+  .our-story__christie-quote {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+}
+
 
 /* =======  P.0 INDEX STYLING ======= */
 
@@ -844,57 +868,80 @@ html > * {
 /* =======  P.0 RSVP STYLING ======= */
 
 .rsvp-form {
-  display: grid;
   background: #ffffff;
-  padding: 1em 1em 0.5em 1em;
-  display: grid;
-  grid-template-columns: 1fr;
+  padding: 1em;
+
 }
 
 .rsvp-body {
   border: lightgray solid 1px;
   border-radius: 5px;
+  width: 75%;
+  margin: 0 auto;
+  background: #f9f9f9;
+}
+
+.form-body {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr 1fr auto;
+  grid-template-rows: repeat(8, auto);
+  grid-gap: 10px;
   padding: 1em;
-  margin: 0 2em;
 }
 
 .rsvp-name {
-  margin: 1em 0;
   font-size: 16px;
+  grid-column: 2 / span 3;
 }
 .rsvp-name input {
   width: 100%;
 }
 
 .rsvp-attendance {
-  margin: 1em 0;
+  margin: 0;
+  margin-top: 0.5em;
   font-size: 16px;
+  grid-row: 2;
+  grid-column: 2 / span 4;
 }
 
 .rsvp-attendance-options {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 0.5em;
+  margin: 0.5em auto;
   text-align: center;
 }
 
 .rsvp-guests {
   font-size: 16px;
-  padding-top: 20px;
+  grid-column: 5;
+  grid-row: 1;
+
 }
 
 .rsvp-guests input {
-  width: 25%;
-  margin-left: 10px;
+  width: 100%;
+}
+
+.rsvp-messagebox {
+  grid-column: 2 / span 4;
+  grid-row: 3 / span 2;
+  font-size: 16px;
+}
+
+.rsvp-songbox {
+  grid-column: 2 / span 4;
+  grid-row: 5 / span 2;
+  font-size: 16px;
+}
+
+.rsvp-messagebox textarea, .rsvp-songbox textarea {
+  width: 100%;
 }
 
 .rsvp-message {
   font-size: 14px;
   margin: 1em 0;
-}
-
-.rsvp-message textarea {
-  width: 100%;
 }
 
 .rsvp-submit button {
@@ -912,7 +959,8 @@ html > * {
 }
 
 .rsvp-submit {
-  margin-bottom: 1em;
+  grid-row: 8;
+  grid-column: 2 / span 4;
 }
 
 .rsvp-message {
@@ -921,6 +969,17 @@ html > * {
   text-align: center;
   padding-top: 10px;
   font-size: 18px;
+}
+
+@media (max-width: 480px) {
+
+    .rsvp-body {
+      width: 100%;
+    }
+    .rsvp-attendance-options {
+      text-align: left;
+    }
+
 }
 
 
