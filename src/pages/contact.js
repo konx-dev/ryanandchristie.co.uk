@@ -87,7 +87,7 @@ export default class Contact extends React.Component {
                 <textarea name="Song choices" rows="2" onChange={this.handleChange} />
               </label>
             </div>
-            <div data-netlify-recaptcha></div>
+            <div className="rsvp-recaptcha" data-netlify-recaptcha></div>
             <div className="rsvp-submit">
               <button type="submit">Submit</button>
             </div>
