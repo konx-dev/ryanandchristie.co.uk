@@ -878,7 +878,7 @@ html > * {
   border-radius: 5px;
   width: 75%;
   margin: 0 auto;
-  background: #f9f9f9;
+  background: #ffffff;
 }
 
 .form-body {
@@ -895,6 +895,8 @@ html > * {
 }
 .rsvp-name input {
   width: 100%;
+  background: #f9f9f9;
+  border-style: none;
 }
 
 .rsvp-attendance {
@@ -921,6 +923,8 @@ html > * {
 
 .rsvp-guests input {
   width: 100%;
+  background: #f9f9f9;
+  border-style: none;
 }
 
 .rsvp-messagebox {
@@ -937,6 +941,9 @@ html > * {
 
 .rsvp-messagebox textarea, .rsvp-songbox textarea {
   width: 100%;
+  background: #f9f9f9;
+  border-style: none;
+  resize: none;
 }
 
 .rsvp-message {
