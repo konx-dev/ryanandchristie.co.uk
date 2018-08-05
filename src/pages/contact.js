@@ -71,7 +71,7 @@ export default class Contact extends React.Component {
               </label>
             </div>
             <div className="rsvp-guests">
-                <label>Guests:
+                <label>Attendees:
                     <input type="number" name="Total number of Guests" min="0" max="8" onChange={this.handleChange} required />
                 </label>    
             </div>
